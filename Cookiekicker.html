@@ -9,6 +9,16 @@
     console.log;number</script>
 </head>
 <body>
-    <button onclick="var number = number + 1"></button>
+    <script type="text/javascript">
+
+    var cookie = 0;
+    function bake() {
+		var BakePerClick = 1
+		cookie += BakePerClick;
+        document.getElementById("cookie").innerHTML = cookie;
+    };
+    </script>
+    <button type="button" onclick="bake()"><img src="Cookie.jpg"></button>
+    <p>Cookies Kicked: <a id="cookie">0</a></p>
 </body>
 </html>
