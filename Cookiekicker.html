@@ -12,13 +12,22 @@
     <script type="text/javascript">
 
     var cookie = 0;
+    var Multiplyer = 1;
+    function upgrade() {
+		var UpgardesPerClick = 1
+		Multiplyer += UpgardesPerClick;
+        document.getElementById("upgrader").innerHTML = upgrader;
+    };
     function bake() {
-		var BakePerClick = 1
+		var BakePerClick = 1 * Multiplyer
 		cookie += BakePerClick;
         document.getElementById("cookie").innerHTML = cookie;
     };
+   
     </script>
     <button type="button" onclick="bake()"><img src="Cookie.jpg"></button>
     <p>Cookies Kicked: <a id="cookie">0</a></p>
+    <button type="button" onclick="upgrade()"><img src="Cookie.jpg"></button>
+    <p> Kick upgrader: <a id="upgrader">0</a></p>
 </body>
 </html>
