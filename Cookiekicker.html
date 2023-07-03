@@ -15,11 +15,13 @@
     var UpgradeMultipyer = 2;
     function upgrade() {
 		var UpgradesPerClick = 1
-        upgradeCost *=UpgradeMultipyer
-        cookie -=upgardeCost
-		Multiplyer += UpgradesPerClick;
-        document.getElementById("upgrader").innerHTML = Multiplyer;
-        document.getElementById("cookie").innerHTML = cookie
+        if (cookie >= upgradeCost);
+            cookie -=upgardeCost
+            upgradeCost *=UpgradeMultipyer
+		    Multiplyer += UpgradesPerClick;
+            document.getElementById("upgrader").innerHTML = Multiplyer;
+            document.getElementById("cookie").innerHTML = cookie
+
     };
     function bake() {
 		var BakePerClick = 1 * Multiplyer
@@ -32,5 +34,6 @@
     <p>Cookies Kicked: <a id="cookie">0</a></p>
     <button type="button" onclick="upgrade()"></button>
     <p> Kick upgrader: <a id="upgrader">0</a></p>
+    <p> upgrade cost: <a id="upgrade cost">3</a></p>
 </body>
 </html>
