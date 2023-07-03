@@ -11,14 +11,15 @@
 
     var cookie = 0;
     var Multiplyer = 1;
-    var upgardeCost = 3;
-    var UpgardeMultipyer = 2;
+    var upgradeCost = 3;
+    var UpgradeMultipyer = 2;
     function upgrade() {
-		var UpgardesPerClick = 1
-
+		var UpgradesPerClick = 1
+        upgradeCost *=UpgradeMultipyer
         cookie -=upgardeCost
-		Multiplyer += UpgardesPerClick;
+		Multiplyer += UpgradesPerClick;
         document.getElementById("upgrader").innerHTML = Multiplyer;
+        document.getElementById("cookie").innerHTML = cookie
     };
     function bake() {
 		var BakePerClick = 1 * Multiplyer
