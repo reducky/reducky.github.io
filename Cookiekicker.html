@@ -11,12 +11,12 @@
 
     var cookie = 0;
     var Multiplyer = 1;
-    var upgradeCost = 11;
+    var upgradeCost = 50;
     var upgrades = 1;
-    var displayCost = 11;
+    var displayCost = 50;
     function upgrade() {
 		var UpgradesPerClick = 1
-        upgradeCost = 11 * upgrades
+        upgradeCost *= upgrades
         if(cookie >= upgradeCost) {
             cookie -= upgradeCost
             upgrades += 1
