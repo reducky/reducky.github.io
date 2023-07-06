@@ -19,6 +19,7 @@
         if(cookie >= upgradeCost) {
             upgradeCost = 3 * upgrades
             cookie -= upgradeCost
+            upgrades += 1
 		    Multiplyer += UpgradesPerClick;
             document.getElementById("upgrader").innerHTML = Multiplyer; 
             document.getElementById("cookie").innerHTML = cookie;
