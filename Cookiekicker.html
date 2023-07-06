@@ -16,10 +16,13 @@
     var upgrades = 1;
     function upgrade() {
 		var UpgradesPerClick = 1
-        upgradeCost = 3 * upgrades
-        cookie -= upgradeCost
-		Multiplyer += UpgradesPerClick;
-        document.getElementById("upgrader").innerHTML = Multiplyer;
+        if(cookie >= upgradeCost);
+            upgradeCost = 3 * upgrades
+            cookie -= upgradeCost
+		    Multiplyer += UpgradesPerClick;
+            document.getElementById("upgrader").innerHTML = Multiplyer;
+        else;
+            
     };
     function bake() {
 		var BakePerClick = 1 * Multiplyer
