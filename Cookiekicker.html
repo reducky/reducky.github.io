@@ -13,14 +13,13 @@
     var Multiplyer = 1;
     var upgradeCost = 3;
     var UpgradeMultipyer = 2;
+    var upgrades = 1;
     function upgrade() {
 		var UpgradesPerClick = 1
-        cookie =- upgardeCost
-        upgradeCost = upgradeCost
+        upgradeCost = 3 * upgrades
+        cookie -= upgradeCost
 		Multiplyer += UpgradesPerClick;
         document.getElementById("upgrader").innerHTML = Multiplyer;
-        document.getElementById("cookie").innerHTML = cookie;
-
     };
     function bake() {
 		var BakePerClick = 1 * Multiplyer
