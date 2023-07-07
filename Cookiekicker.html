@@ -10,21 +10,21 @@
     <script type="text/javascript">
 
     var cookie = 0;
-    var Multiplyer = 1;
-    var upgradeCost = 100;
-    var upgrades = 1;
-    var displayCost = upgradeCost;
+    var Multiplyer1 = 1;
+    var upgradeCost1 = 100;
+    var upgrades1 = 1;
+    var displayCost1 = upgradeCost1;
     function upgrade() {
 		var UpgradesPerClick = 1
-        upgradeCost *= upgrades
-        if(cookie >= upgradeCost) {
-            cookie -= upgradeCost
-            upgrades += 1
-		    Multiplyer += UpgradesPerClick;
-            displayCost = upgradeCost + 100
-            document.getElementById("upgrader").innerHTML = Multiplyer - 1; 
+        upgradeCost1 *= upgrades1
+        if(cookie >= upgradeCost1) {
+            cookie -= upgradeCost1
+            upgrades1 += 1
+		    Multiplyer1 += UpgradesPerClick;
+            displayCost1 = upgradeCost1 + 100
+            document.getElementById("upgrader1").innerHTML = Multiplyer1 - 1; 
             document.getElementById("cookie").innerHTML = cookie;
-            document.getElementById("upgrade cost").innerHTML = displayCost;
+            document.getElementById("upgrade cost1").innerHTML = displayCost1;
         }
            
     };
@@ -38,6 +38,7 @@
     <button type="button" onclick="bake()"><img src="Cookie.jpg"></button>
     <p>Cookies Kicked: <a id="cookie">0</a></p>
     <button type="button" onclick="upgrade()"></button>
-    <p> Kick upgrader-1: <a id="upgrader">0 <p> upgrade cost: <a id="upgrade cost">100</a></p></a></p>
+    <p> Kick upgrader-1: <a id="upgrader1">0 <p> upgrade cost: <a id="upgrade cost1">100</a></p></a></p>
+    <p> Kick upgrader-1: <a id="upgrader2">0 <p> upgrade cost: <a id="upgrade cost2">100</a></p></a></p>
 </body>
 </html>
