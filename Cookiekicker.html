@@ -12,12 +12,12 @@
     var cookie = 0;
     var Multiplyer = 1;
     var SuperkickerMulti = 1
-    var upgradeCost = 100;
+    var upgradeCost = 50;
     var upgrades = 1;
     var displayCost = upgradeCost;
     function upgrade() {
 		var UpgradesPerClick = 1
-        upgradeCost *= upgrades + 50 * upgrades
+        upgradeCost = 50 * upgrades + upgrades * 21
         if(cookie >= upgradeCost) {
             cookie -= upgradeCost
             upgrades += 1
