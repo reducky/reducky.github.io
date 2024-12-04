@@ -17,7 +17,7 @@
     var displayCost = upgradeCost;
     function upgrade() {
 		var UpgradesPerClick = 1
-        upgradeCost *= upgrades
+        upgradeCost *= upgrades + 50 * upgrades
         if(cookie >= upgradeCost) {
             cookie -= upgradeCost
             upgrades += 1
