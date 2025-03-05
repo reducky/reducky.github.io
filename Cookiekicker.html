@@ -7,47 +7,7 @@
     <title>Cookiekicker</title>
 </head>
 <body>
-    <script type="text/javascript">
-
-    var cookie = 0;
-    var Multiplyer = 1;
-    var SuperkickerMulti = 1
-    var upgradeCost = 50;
-    var upgrades = 1;
-    var displayCost = upgradeCost;
-var upgradecost2 = 1000* upgrades2 * 11;
-var upgrades2 = 1;
-document.getElementById("upgrade2level").innerHTML = upgrades2;
-document.getElementById("upgrade cost2").innerHTML = upgradecost2;
-
-    function upgrade1() {
-		var UpgradesPerClick = 1
-        upgradeCost = 50 * upgrades + upgrades * 21
-        if(cookie >= upgradeCost) {
-            cookie -= upgradeCost;
-            upgrades += 1;
-		    Multiplyer += UpgradesPerClick;
-            displayCost = upgradeCost + 100;
-            document.getElementById("upgrader").innerHTML = Multiplyer - 1; 
-            document.getElementById("cookie").innerHTML = cookie;
-            document.getElementById("upgrade cost").innerHTML = displayCost;
-        }
-	function upgrade2() {
-		upgradecost2 = 1000* upgrades2 * 11
-		if (cookie >= upgradecost2) {
-			cookie -= upgradecost2
-			
-		}
-	}
-           
-    };
-    function bake() {
-		var BakePerClick = 1 * Multiplyer;
-		cookie += BakePerClick;
-        document.getElementById("cookie").innerHTML = cookie;
-    };
-   
-    </script>
+    <script src="script.js"></script>
     <button type="button" onclick="bake()"><img src="Cookie.jpg"></button>
     <p>Cookies Kicked: <a id="cookie">0</a></p>
     <button type="button" onclick="upgrade1()"><img id="kickerup", src="OIP.jpg"></button>
