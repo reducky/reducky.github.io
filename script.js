@@ -35,3 +35,4 @@ document.getElementById("upgrade cost2").innerHTML = upgradecost2;
 		var BakePerClick = 1 * Multiplyer;
 		cookie += BakePerClick;
         document.getElementById("cookie").innerHTML = cookie;
+    }
