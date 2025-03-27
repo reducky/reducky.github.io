@@ -7,7 +7,7 @@
     var displayCost = upgradeCost;
 var upgradecost2 = 1000* upgrades2 * 11;
 var upgrades2 = 1;
-var teststr = string(upgradecost2);
+var teststr = upgradecost2.toString();
 document.getElementById("upgrade cost2").textContent = teststr;
 
     function upgrade1() {
@@ -18,21 +18,22 @@ document.getElementById("upgrade cost2").textContent = teststr;
             upgrades += 1;
 		    Multiplyer += UpgradesPerClick;
             displayCost = upgradeCost + 100;
-	    teststr = string(Multiplyer - 1);
+	    teststr = Multiplyer - 1;
+	    teststr = teststr.toString();
             document.getElementById("upgrader").textContent = teststr;
-	    teststr = string(cookie);
+	    teststr = cookie.toString();
             document.getElementById("cookies").textContent = teststr;
-	    string(displayCost);
+	    teststr = displayCost.toString();
             document.getElementById("upgrade cost").textContent = teststr;
         }
 	function upgrade2() {
 		if (cookie >= upgradecost2) {
 			cookie -= upgradecost2;
-			teststr = string(upgrades2);
+			teststr = upgrades2.toString();
 			document.getElementById("upgrade2level").textContent = teststr;
             upgrades2 += 1;
             upgradecost2 = 1000* upgrades2 * 11;
-	    teststr = string(upgradecost2);
+	    teststr = upgradecost2.toString();
             document.getElementById("upgrade cost2").textContent = teststr;
 		}
 	}
@@ -41,5 +42,6 @@ document.getElementById("upgrade cost2").textContent = teststr;
     function bake() {
 		var BakePerClick = 1 * Multiplyer;
 		cookie += BakePerClick;
-        document.getElementById("cookie").textContent = string(cookie);
+	    teststr = cookie.toString();
+        document.getElementById("cookie").textContent = teststr;
     }
